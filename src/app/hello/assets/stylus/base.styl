@@ -1,0 +1,206 @@
+@import './_variable.styl';
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* custom */
+a {
+    color: #7e8c8d;
+    text-decoration: none;
+    -webkit-backface-visibility: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 5px;
+    background-color: rgba(125, 125, 125, 0.7);
+    -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    width: 5px;
+    background-color: rgba(125, 125, 125, 0.7);
+    -webkit-border-radius: 6px;
+}
+
+html, body
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	-webkit-text-size-adjust: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	background: #f2f3f5;
+
+#app
+	width: 100%;
+	height: 100%;
+	font-size: m-fs;
+	
+.router-container
+	width: 100%;
+	height: 100%;
+
+.table
+	display: table;
+	
+.table-cell
+	display: table-cell;
+
+.tc
+	text-align: center;
+
+.pt-30
+	padding-top: 30px;
+
+.pr-30
+	padding-right: 30px;
+
+.mt-30
+	margin-top: 30px;
+
+.mt-90
+	margin-top: 90px;
+
+.mlr-20
+	margin-left: 20px;
+	margin-right: 20px;
+
+.mb-160
+	margin-bottom: 160px;
+
+.bt-0 
+	border-top: none;
+
+.red
+	color: color-red;
+
+.btn-box
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 10px 20px 36px;
+	background-color: #f2f3f5;
+	z-index: 5;
+
+// 修改antd-mobile的组件样式
+.am-icon-200
+	width: 200px;
+	height: 200px;
+
+.midea-flex
+	display: flex;
+
+.midea-list
+	.am-list-line
+		.am-list-content
+			font-size: m-fs;
+		.am-list-extra
+			flex-basis: 70%;
+			font-size: m-fs;
+
+.midea-btn
+	height: 96px;
+	line-height: 96px;
+	font-size: l-fs;
+	background: color-3aa2eb;
+	margin-bottom: 15px;
+
+.midea-card
+	.am-card-header
+		font-size: m-fs;
+	.am-card-body
+		position: relative;
+		font-size: m-fs;
+	.am-card-footer
+		font-size: s-fs;
+	.checkbox
+		padding-left: 0;
+		min-height: 0;
+		.am-list-thumb
+			margin-right: 0;
+	.lb-checkbox
+		.am-list-thumb
+			margin-right: 15px;
+		.am-list-line
+			padding-right: 0;
+			min-height: 0;
+			font-size: s-fs;
+			.am-list-content
+				padding-top: 0;
+				padding-bottom: 0;
+				line-height: 1;
+				font-size: s-fs;
+				color: #888;
+		.am-checkbox
+			width: .32rem;
+			height: .32rem;
+			.am-checkbox-inner
+				width: .32rem;
+				height: .32rem;
+				border-radius: 999px;
+				&:after {
+					top:  0;
+					left: 0;
+    				right: 0;
+    				bottom: 0;
+    				margin: auto;
+    				width:  .05rem;
+    				height:  .13rem;
+				}
+

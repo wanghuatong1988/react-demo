@@ -1,0 +1,24 @@
+.router-container
+    position: relative;
+    .main-container
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: calc(100% - .9rem);
+
+.slide-enter 
+    opacity: 0.1;
+    // transform: translate3d(0, 10%, 0);
+    transition: all 300ms ease-in-out;
+    &.slide-enter-active {
+        opacity: 1;
+        // transform: translate3D(0, 0, 0);
+    }
+
+.slide-leave
+    opacity: 1;
+    transition: all 300ms ease-in-out;
+    &.slide-leave-active {
+        opacity: 0;
+    }
